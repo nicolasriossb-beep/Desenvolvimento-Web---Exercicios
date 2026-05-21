@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        section{
+            margin-bottom: 40px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+        }
+
+        .circulo{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 10px 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Exercícios de JavaScript</h1>
+
+    /*EXERCÍCIO 1 */
+    <section>
+
+        <h2>1 - Mostrar e ocultar elemento</h2>
+
+        <p id="texto">
+            Olá! Eu posso aparecer e sumir.
+        </p>
+
+        <button onclick="mostrarOcultar()">
+            Mostrar / Ocultar
+        </button>
+
+    </section>
+
+    /*EXERCÍCIO 2 */
+    <section>
+
+        <h2>2 - Limpando conteúdo</h2>
+
+        <input type="text" id="campoTexto">
+
+        <button onclick="mostrarTexto()">
+            Mostrar
+        </button>
+
+        <button onclick="limparTexto()">
+            Limpar
+        </button>
+
+        <div id="resultadoTexto"></div>
+
+    </section>
+
+    /*EXERCÍCIO 3 */
+    <section>
+
+        <h2>3 - Pergunta com múltiplas opções</h2>
+
+        <p>
+            Qual linguagem usamos para estilizar páginas?
+        </p>
+
+        <button onclick="verificarResposta(false)">
+            Java
+        </button>
+
+        <button onclick="verificarResposta(true)">
+            CSS
+        </button>
+
+        <button onclick="verificarResposta(false)">
+            Python
+        </button>
+
+        <p id="resultadoPergunta"></p>
+
+    </section>
+
+    /*EXERCÍCIO 4 */
+    <section>
+
+        <h2>4 - Lista de tarefas</h2>
+
+        <input type="text" id="tarefa">
+
+        <button onclick="adicionarTarefa()">
+            Adicionar
+        </button>
+
+        <ul id="lista"></ul>
+
+    </section>
+
+    /*EXERCÍCIO 5 */
+    <section>
+
+        <h2>5 - Conversor de temperatura</h2>
+
+        <input type="number" id="celsius">
+
+        <button onclick="converterTemperatura()">
+            Converter
+        </button>
+
+        <p id="resultadoTemperatura"></p>
+
+    </section>
+
+    /*EXERCÍCIO 6 */
+    <section>
+
+        <h2>6 - Simulador de semáforo</h2>
+
+        <div id="vermelho" class="circulo"></div>
+        <div id="amarelo" class="circulo"></div>
+        <div id="verde" class="circulo"></div>
+
+        <button onclick="acender('red')">
+            Vermelho
+        </button>
+
+        <button onclick="acender('yellow')">
+            Amarelo
+        </button>
+
+        <button onclick="acender('green')">
+            Verde
+        </button>
+
+    </section>
+
+    /*EXERCÍCIO 7 */
+    <section>
+
+        <h2>7 - Gerador de tabuada</h2>
+
+        <input type="number" id="numero">
+
+        <button onclick="gerarTabuada()">
+            Gerar
+        </button>
+
+        <div id="resultadoTabuada"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
