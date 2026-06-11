@@ -35,16 +35,10 @@
 
     /*EXERCÍCIO 1 */
     <section>
-
         <h2>1 - Mostrar e ocultar elemento</h2>
+        <p id="texto">Olá! Eu posso aparecer e sumir.</p>
 
-        <p id="texto">
-            Olá! Eu posso aparecer e sumir.
-        </p>
-
-        <button onclick="mostrarOcultar()">
-            Mostrar / Ocultar
-        </button>
+        <button onclick="mostrarOcultar()">Mostrar / Ocultar</button>
 
     </section>
 
@@ -52,17 +46,10 @@
     <section>
 
         <h2>2 - Limpando conteúdo</h2>
-
         <input type="text" id="campoTexto">
+        <button onclick="mostrarTexto()">Mostrar</button>
 
-        <button onclick="mostrarTexto()">
-            Mostrar
-        </button>
-
-        <button onclick="limparTexto()">
-            Limpar
-        </button>
-
+        <button onclick="limparTexto()">Limpar</button>
         <div id="resultadoTexto"></div>
 
     </section>
@@ -71,38 +58,24 @@
     <section>
 
         <h2>3 - Pergunta com múltiplas opções</h2>
-
         <p>
             Qual linguagem usamos para estilizar páginas?
         </p>
-
         <button onclick="verificarResposta(false)">
             Java
         </button>
-
         <button onclick="verificarResposta(true)">
             CSS
         </button>
-
-        <button onclick="verificarResposta(false)">
-            Python
-        </button>
-
+        <button onclick="verificarResposta(false)">Python</button>
         <p id="resultadoPergunta"></p>
-
     </section>
 
     /*EXERCÍCIO 4 */
     <section>
-
         <h2>4 - Lista de tarefas</h2>
-
         <input type="text" id="tarefa">
-
-        <button onclick="adicionarTarefa()">
-            Adicionar
-        </button>
-
+        <button onclick="adicionarTarefa()">Adicionar</button>
         <ul id="lista"></ul>
 
     </section>
@@ -111,13 +84,8 @@
     <section>
 
         <h2>5 - Conversor de temperatura</h2>
-
         <input type="number" id="celsius">
-
-        <button onclick="converterTemperatura()">
-            Converter
-        </button>
-
+        <button onclick="converterTemperatura()">Converter</button>
         <p id="resultadoTemperatura"></p>
 
     </section>
@@ -131,35 +99,19 @@
         <div id="amarelo" class="circulo"></div>
         <div id="verde" class="circulo"></div>
 
-        <button onclick="acender('red')">
-            Vermelho
-        </button>
+        <button onclick="acender('red')">Vermelho</button>
 
-        <button onclick="acender('yellow')">
-            Amarelo
-        </button>
-
-        <button onclick="acender('green')">
-            Verde
-        </button>
-
+        <button onclick="acender('yellow')">Amarelo</button>
+        <button onclick="acender('green')">Verde</button>
     </section>
 
     /*EXERCÍCIO 7 */
     <section>
-
         <h2>7 - Gerador de tabuada</h2>
-
         <input type="number" id="numero">
-
-        <button onclick="gerarTabuada()">
-            Gerar
-        </button>
-
-        <div id="resultadoTabuada"></div>
-
+        <button onclick="gerarTabuada()">Gerar</button>
+         <div id="resultadoTabuada"></div>
     </section>
-
     <script src="script.js"></script>
 
 </body>
